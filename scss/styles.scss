@@ -631,37 +631,36 @@ footer {
 
 /************* PAGINA PREGUNTAS FRECUENTES *************/
 /************* PAGINA PREGUNTAS FRECUENTES  *************/
-
-.seccionPreguntas{
-    width: 100%;
-    background-color: $gris-superclarito;
+.seccionPreguntas {
+	width: 100%;
+	background-color: $gris-superclarito;
+	.accordion-item {
+		margin-bottom: 20px;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0 3px 6px rgba(142, 142, 142, .16);
+		font-size: 1.3rem;
+		color: $gris-texto;
+		button {
+			position: relative;
+			padding: 18px 25px;
+			font-size: 18px;
+			font-weight: 700;
+			text-align: left;
+			background-color: #fff;
+			color: $lila;
+		}
+	}
+}
+.accordion-button {
+	&:focus {
+		box-shadow: none;
+	}
+}
+.fit-image {
+	width: 100%;
 }
 
-.seccionPreguntas .accordion-item {
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(142, 142, 142, .16);
-    font-size: 1.3rem;
-    color: $gris-texto;
-}
-
-.seccionPreguntas .accordion-item button {
-    position: relative;
-    padding: 18px 25px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: left;
-    background-color: #fff;
-    color: $lila;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-}
-.fit-image{
-    width: 100%;
-    }
 
 /************* PAGINA ERROR 404 *************/
 /************* PAGINA ERROR 404  *************/

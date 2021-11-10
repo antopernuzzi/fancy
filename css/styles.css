@@ -520,23 +520,21 @@ footer {
 .seccionPreguntas {
   width: 100%;
   background-color: #fafafa; }
-
-.seccionPreguntas .accordion-item {
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(142, 142, 142, 0.16);
-  font-size: 1.3rem;
-  color: #9698a6; }
-
-.seccionPreguntas .accordion-item button {
-  position: relative;
-  padding: 18px 25px;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: left;
-  background-color: #fff;
-  color: #5222D0; }
+  .seccionPreguntas .accordion-item {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(142, 142, 142, 0.16);
+    font-size: 1.3rem;
+    color: #9698a6; }
+    .seccionPreguntas .accordion-item button {
+      position: relative;
+      padding: 18px 25px;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: left;
+      background-color: #fff;
+      color: #5222D0; }
 
 .accordion-button:focus {
   box-shadow: none; }
