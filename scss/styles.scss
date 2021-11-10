@@ -370,53 +370,46 @@ footer {
 /************* PAGINA BENEFICIOS  *************/
 /************* PAGINA BENEFICIOS  *************/
 .seccionBeneficiosTop {
-    width: 100%;
-    background-color: $gris-superclarito;
+	width: 100%;
+	background-color: $gris-superclarito;
 }
-
 .contenedorBeneficiosTop {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    align-items: center;
-    gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+	align-items: center;
+	gap: 1rem;
+	img {
+		width: 100%;
+		justify-self: center;
+	}
 }
-
 .datosPaginaBeneficios {
-    text-align: initial;
+	text-align: initial;
 }
-
-.contenedorBeneficiosTop img {
-    width: 100%;
-    justify-self: center;
-}
-
-
 .seccionBeneficiosMiddle {
-    width: 100%;
-    background-color: $gris-celestito;
+	width: 100%;
+	background-color: $gris-celestito;
 }
-
-.contenedorBeneficiosMiddle h2 {
-    text-align: center;
+.contenedorBeneficiosMiddle {
+	h2 {
+		text-align: center;
+	}
 }
-
 .galeriaBeneficiosMiddle {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-    align-items: center;
-    gap: 2rem;
-    justify-items: center;
-    align-items: start;
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+	align-items: center;
+	gap: 2rem;
+	justify-items: center;
+	align-items: start;
 }
-
 .itemBeneficiosMiddle {
-
-    background-color: $gris-superclarito;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    padding: 1.5rem;
+	background-color: $gris-superclarito;
+	border-radius: .5rem;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+	padding: 1.5rem;
 }
+
 
 /************* PAGINA NOSOTROS  *************/
 /************* PAGINA NOSOTROS *************/

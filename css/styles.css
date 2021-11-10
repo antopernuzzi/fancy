@@ -292,13 +292,12 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: center;
   gap: 1rem; }
+  .contenedorBeneficiosTop img {
+    width: 100%;
+    justify-self: center; }
 
 .datosPaginaBeneficios {
   text-align: initial; }
-
-.contenedorBeneficiosTop img {
-  width: 100%;
-  justify-self: center; }
 
 .seccionBeneficiosMiddle {
   width: 100%;
