@@ -519,63 +519,56 @@ footer {
 
 /************* PAGINA PROYECTOS *************/
 /************* PAGINA PROYECTOS *************/
-
 .seccionProyectosTop {
-    width: 100%;
-    background-color: $gris-superclarito;
+	width: 100%;
+	background-color: $gris-superclarito;
 }
-
 .contenedorProyectosTop {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    align-items: center;
-    gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+	align-items: center;
+	gap: 1rem;
+	img {
+		width: 100%;
+		justify-self: center;
+	}
 }
-
 .datosPaginaProyectos {
-    text-align: initial;
-}
-
-.contenedorProyectosTop img {
-    width: 100%;
-    justify-self: center;
+	text-align: initial;
 }
 
 /* CONTADOR PROYECTOS MIDDLE */
 .contadorSeccion {
-    background-color: $gris-claro;
-    width: 100%;
-
+	background-color: $gris-claro;
+	width: 100%;
 }
-
 .contador {
-    background-color: $naranja;
-    margin: 5rem;
-    padding: 5rem;
-    border-radius: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    row-gap: 4rem;
-    column-gap: 2rem;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+	background-color: $naranja;
+	margin: 5rem;
+	padding: 5rem;
+	border-radius: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	row-gap: 4rem;
+	column-gap: 2rem;
+	justify-items: center;
+	align-items: center;
+	text-align: center;
 }
-
 .tipoContenedor {
-    color: white;
-    text-align: center;
-    font-size: x-large;
-}
-.tipoContenedor h2{
-    color: white;
-    text-align: center;
-    font-size: 3.5rem;
+	color: white;
+	text-align: center;
+	font-size: x-large;
+	h2 {
+		color: white;
+		text-align: center;
+		font-size: 3.5rem;
+	}
+	p {
+		color: white;
+	}
 }
 
-.tipoContenedor p {
-    color: white;
-}
 
 /************* PAGINA SUMATE AL EQUIPO *************/
 /************* PAGINA SUMATE AL EQUIPO *************/
