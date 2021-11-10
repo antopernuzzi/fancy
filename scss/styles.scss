@@ -784,6 +784,12 @@ footer {
 	.bienvenidaTextos {
 		width: 100%;
 		align-items: center;
+        h1{
+            font-size: 3rem;
+            font-weight: normal;
+            line-height: 4rem;
+        }
+        
 	}
     /* MEDIA QUERY NOSOTROS SECTION */
 	.nosotros {
@@ -821,6 +827,29 @@ footer {
 		width: 100%;
 		align-items: center;
 	}
+
+    .tituloSecundario {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    /* MEDIA QUERY PAGE NOSOTROS*/
+    .textosPaginaNosotros{
+        h1{
+            font-size: 3rem;
+            font-weight: normal;
+            line-height: 4rem;
+
+        }
+    }
+/* MEDIA QUERY PAGE PREGUNTAS*/
+    .accordion-item {
+	
+		font-size: 1rem;
+    }
+   
 }
 
 
