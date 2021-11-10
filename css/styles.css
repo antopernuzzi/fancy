@@ -473,13 +473,12 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: center;
   gap: 1rem; }
+  .contenedorSumateAlEquipoTop img {
+    width: 100%;
+    justify-self: center; }
 
 .datosPaginaSumateAlEquipo {
   text-align: initial; }
-
-.contenedorSumateAlEquipoTop img {
-  width: 100%;
-  justify-self: center; }
 
 .seccionSumateAlEquipoMiddle {
   width: 100%;
@@ -495,14 +494,13 @@ footer {
   padding: 5rem 2rem;
   text-align: center;
   transition: all 0.3s; }
-
-.itemSumateAlEquipoMiddle:hover {
-  border: 1px solid #EB615A;
-  border-radius: 50%;
-  transform: translateY(-2rem);
-  background-color: #fafafa;
-  border-bottom: 7px solid #EB615A;
-  color: #EB615A; }
+  .itemSumateAlEquipoMiddle:hover {
+    border: 1px solid #EB615A;
+    border-radius: 50%;
+    transform: translateY(-2rem);
+    background-color: #fafafa;
+    border-bottom: 7px solid #EB615A;
+    color: #EB615A; }
 
 .seccionSubiCV {
   width: 100%;
