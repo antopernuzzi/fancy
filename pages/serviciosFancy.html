@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- da al navegador las instrucciones sobre cómo controlar las dimensiones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy - Agencia digital - Servicios</title>
+    <!--Icono-->
+    <link rel="icon" type="image/png" sizes="32x32" href="../multimedia/iconoLogo.svg">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- MIS ESTILOS External CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- GOOGLE Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--ANIMACIONES EXTERNAS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--KEYWORDS-->
+    <meta name="keywords"
+        content="Desarrollo web, Agencia digital, outsourcing , Diseño web, Desarrollo ágil de software">
+    <!--META DESCRIPTION-->
+    <meta name="description"
+        content="Somos una Agencia digital que ofrece servicios de desarrolo ágil de software, diseño web, outsourcing, entre otras soluciones tecnológicas.">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="contenedorGeneral">
+            <nav>
+                <!-- logo -->
+                <a href="../index.html">
+                    <img src="../multimedia/logo.svg" alt="logo Fancy" class="logo">
+                </a>
+
+                <!-- Icons -->
+                <input type="checkbox" class="check" id="toggle">
+                <label for="toggle" class="hamburger" id="hamburger">
+                    <img src="../multimedia/menuHamburguesa.png" alt="menu">
+                </label>
+                <!--Opciones de menu-->
+                <ul class="navLista" id="navLista">
+                    <li>
+                        <a href="beneficiosFancy.html">Beneficios</a>
+                    </li>
+                    <li>
+                        <a href="nosotrosFancy.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="serviciosFancy.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="proyectosFancy.html">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="sumateAlEquipoFancy.html">Sumate al equipo</a>
+                    </li>
+                </ul>
+                <a href="contactoFancy.html" class="boton">Empecemos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--SERVICIOS TOP-->
+    <section class="seccionServiciosTop">
+        <div class="contenedorGeneral contenedorServiciosTop" data-aos="fade-up-right" data-aos-duration="700">
+            <img src="../multimedia/imagenServicios.svg" alt="servicios">
+            <div class="datosPaginaServicios">
+                <h2 class=" tituloSecundario    margenChico">Ofreciendo una transformación digital innovadora en todas
+                    las industrias</h2>
+                <p class="margenGrande">La tecnología ha superado todas las nociones de avance en la última década. La
+                    adaptación y la evolución se han vuelto inevitables para mantenerse en el negocio. Ofrecemos
+                    servicios de transformación digital integrados con tecnologías emergentes para ayudar a las empresas
+                    a dar el salto tecnológico más necesario.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <!--SERVICIOS MIDDLE-->
+    <section class="seccionServiciosMiddle">
+        <div class="contenedorGeneral contenedorServiciosMiddle" data-aos="fade-up-left" data-aos-duration="700">
+            <h2 class="tituloSecundario margenChico">Una <b>solución</b> para cada necesidad</h2>
+            <p class="margenChico">Somos especialistas en</p>
+            <div class="galeriaServiciosMiddle">
+                <div class="itemServiciosMiddle">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAkhJREFUaEPtmP1Rg0AQxfdowHRgohYQOrAEx7EA7cAOTDqwAy3AYSzBDrAARewgaQAcIiiQ+3jvkjmSGfwzHsu+39u720XJkf+pI89fRgFDOzg6cHQO3Fykl0WhnkRkuufk8ygq714+4jcmLlVCV9N0EkXqS0QmzEuItauiKGevebxCn6EEXJ+lCxH1gAb3W1cukyxeoM/CAgLQb3KmXIAF2Olz1Np0azC5iJz8/47HgwQA9Clq/fLQwIHjQQI0L1jXSXhR6wvYxQWnAD39cvmbRGdDw9R0G9TXBacAHf2iKDd3QBQp79rdlwtWASb6zTHnS810RPrEswow0W8uml1qVyfCJ55RgIt+k4APNdslxcYzCnDRb5LwoWYTwMbTCkDpH4ILWgEo/UNwYUsAS39oF7YEsPTtLqA9Jbpuu0fSCHiv+v3WsII3VgHa7TzJ5rO2XJ2A6nY99ekMAwj4TrJ5ZxJESgjqcYCOFa0TyzqghNhz2LKJ11XPxIyH7czRvYgeo1YXfE8uE2omnu0igztNlBZaQ0w8ppXQusDQQgSw8VzNnNMFhhYigI3HttMdF1haLgE+8ZCBxugCS8slwCeez0i5caEeKXtf6fBb2zBS0vGcAkz3gmaoD3Lu94U7BVQP6KakOlDrG2l4+lUOkAC9Cx0Wg9CHBRhcaCkYhj4lAHDBdcig/6fchErI0rChSRHrODcpAQFcoOhTJfTnwnl6K6V67H4OJwCbl65FlffJZ/zMRKMcYAKHWjsKCEXa9J7RgdGBHQn8ACoFU09T0jvqAAAAAElFTkSuQmCC" />
+                    <h3 class="tituloTerciario margenChico">
+                        Product design
+                    </h3>
+                    <p> Aplicamos metodologías LEAN y Service Design para crear productos y soluciones innovadoras con
+                        impacto en el corto plazo.</p>
+                </div>
+
+                <div class="itemServiciosMiddle">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAU9JREFUaEPtWdFNwzAUPIcBYAPSLoA7CVVZhE4CixCVSWoWCOkELQPgVwUV1CYIO3qOkqDzVz6en+/enR3nxWDiw0wcP0hgaAWpwCgVWObbPMvMEwALIB8YZAXAeS/rTbWony9Gy0In8FsANwMDby5/8F4WTRItAg+zt40YuR8Z+C84Rszry/vd8hxbi8Bq7vYjrP435qoo7SxEQM4DitIOelKt5u5PPL8pQAIp9w8V4B5Q+okWooVoIb7IeJVQ7QIeozxGVQYCaKHJW0jpgOTTmwUNfpElR6BMSALKAqqnxyhwAHCtXqmfBLuitBedwv/X2Dq1Ft0IVfjwXmywtVgrX5O4MtmzGKmbu7f9uCE6686IcZ/iH6Oau9FpA4GhK0CqdXprG5JApERUoGmVyML9hGkvi2oFSED5/4EKdPV86ni1AqkBdc1HAl0rljr+CERIA0BMdyuhAAAAAElFTkSuQmCC" />
+                    <h3 class="tituloTerciario margenChico">
+                        Web apps
+                    </h3>
+                    <p>Creamos aplicaciones web B2C/B2B de gran escala, pensadas para la oferta de productos y
+                        servicios.</p>
+                </div>
+
+                <div class="itemServiciosMiddle">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAXBJREFUaEPtWdFNwzAQvcskyAtQTwALgEKYgAlaJqBMQLsBCxAiWAAmSBkAi0lyqEUIJGjvpa6VWLr8+uXZ7z37TrKZMv848/WTCRg6wV4JXLq3aSdSMtPpoRcuQi8Fc/MQjpd9uGEBF65dMPG0D/k+WCFZPgY/Q/+FBJRH7aQouEVJY3FdJ7758CuEBxJQuXZGxHcI4UEwLFf1u79HuFABcyK++SGU2zr4OTIBgqlcuze/CUAc1jCWQEqHNO71uCWguRTjkMZtCaR2KDW/9QHEYQ0Tc8YsAc1dZNwS0FyKcUjjtj6Q2qHU/FaFEIc1TMwZswQ0d5FxS0BzKcYhjdv6QGqHUvNbFdrmcOVWT0R0RkTPdZic70oi5owlSeDvXapc18Evtosd2dVi9gK+SmPGWwipPL8xozsDYxSQ9wNH9k9M6y2R9SPf957elEcuShI56bvPVTzzK0nX7OoX/3FAjUydfECACRjQ/M3U2SfwCVGs1UDuN+daAAAAAElFTkSuQmCC" />
+                    <h3 class="tituloTerciario margenChico">
+                        Mobile apps
+                    </h3>
+                    <p>Construimos soluciones mobile transaccionales.Nuestro fuerte es el diseño y desarrollo de
+                        plataformas híbridas y nativas.
+
+                    </p>
+                </div>
+                <div class="itemServiciosMiddle">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABANJREFUaEPtmL9v20YUx7/v7L0q2t003TGAyfwDUdB0S1CZDpAWHSyjf0CdJWvsMVOcPyCIMwTpkNAqki0p4v4BLWl0rWlqbxN5t+8Fp1AuRR15J8pCYIBaee/ufd7vJ8Il/9El1x8NwOf2YOOBxgMzWqAJoRkNOLN44wFlwo4TtRYWxPfMcJi5LQgtBry8eQmIJWNARAdESM/O5G+91B/M6oKZPLC+crgB5q2isrZKKSgQ7b48Wn1qK1M8VwtAKc7MuwBadR8uyCnPbNUBmQqg40TegqAndS1uglUeOZO82Uv92HR29N0aIFiJumB6UnFxn8E9QVAxPjg9RdpL/TTLEWdxUeUHWpLRJlAHwFLpXcSb4ZG/ZwNhBRC4hw8B3tJfyDtSYm+krM2jIygibBPRhl6GdsNk9a7pPiPAmhvtEuiX4kXM/JQZ29MqXryn40ROGQiDH+0nfonhPt1UCVASNidE3H155PdM1pnm+/pK1GEmFTZfjMkZwqkUQCWsEBQVlDiRktumJAtWontgugPAB/N7EL0RwLMXife6Cip786AIISX7ZW9qAVRjypR3cg8alQ+W/1oCCaXkFZ2iDPxOLH8Oj6/2y0BKINIw8ZZ1MlqAwI22AbqfFxCCr7/4x1fWKf0Fbvx3mfIjIQWxn3g3qu65/U3UlpLejZ/hnTDxt4tyEwAqqTLr55qUXjh/WRY2D2zinoFb+4Zw0hhxICUvF8ePCQBN1elLyZ5pbgnc+E8AV20AAPwaJt6PhnxQYawaWq5fTBpyAiBw4w9jI4JlUwncWJqq2rnCzP+Fx/7XJlhNFRyEifdlXk4HoCbE/0uZLcBy9C+IvjIpNfxeH+AkTLyx+UsDMJHAaVbGKkffwI2fA/jBCsA+hFQZz1VCixDKSqiaYXINxZzEa258k4BXNgACuGXqCZokVmXcMSaxUqBuGV1z47cEfFsFMfcyOno8cGPlhfzEqMrY9aourBoZk3hcBjFFI1M9IB/r/TDx8k313EbTjhJGCHXzbTe+KYGfwPzd8CWiNww8M9X+rAsXlcfUo8S5F/Q7wICIN+c0zKl9Y3zLqzvMjSDKxmkAe1LyzkWM00IMx5ZuMXdmHqctINSRWiDZyKJVfNgqLHaBYXTalL1hZTKvlClAPRbyAKc8YFA/v1ISeAmL1CIp2gCrlVKblJ9y5oJXyhFklmRq6Vi1BZ/y3KGU3DXtG5WjhM2DmTfU3yrj25ONsP7MCYi3bBf5mQHGqhREF8zXaulO9Acg9+ooPnrPOgeqFByOHwvogOGARBvMqhQWw+wQRAOwPAAhlWfomUZ0G6NcCIDNQ/M60wDMy7K29zYesLXUvM41HpiXZW3vbTxga6l5nbv0HvgIjQnwQBNevdAAAAAASUVORK5CYII=" />
+                    <h3 class="tituloTerciario margenChico">
+                        UX/UI
+                    </h3>
+                    <p>Trabajamos sobre la personalidad de los productos para crear experiencias intuitivas que fascinen
+                        a los usuarios.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="contenedorGeneral">
+            <div class="footer">
+
+                <div class="footerEscribinos">
+                    <div class="margenGrande">
+                        <a href="contactoFancy.html" class="boton">Escribinos</a>
+                    </div>
+                    <div class="footerTexto">
+                        <p>© Fancy - Todos los derechos reservados.</p>
+                    </div>
+                </div>
+
+                <div class="footerLinks">
+                    <ul>
+                        <li>info@fancy.com.ar</li>
+                        <li>08000303456</li>
+                        <li>Avenida libertador 333</li>
+                    </ul>
+                </div>
+
+                <div class="footerLinks">
+                    <ul>
+                        <li><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a href="#">Política de calidad</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerIconos">
+
+                    <a href="#">
+                        <img src="../multimedia/icon-facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../multimedia/icon-youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="../multimedia/icon-twitter.svg" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="../multimedia/icon-instagram.svg" alt="instagram">
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPTS-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

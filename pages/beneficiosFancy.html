@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- da al navegador las instrucciones sobre cómo controlar las dimensiones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fancy - Agencia digital - Beneficios</title>
+    <!--Icono-->
+    <link rel="icon" type="image/png" sizes="32x32" href="../multimedia/iconoLogo.svg">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- MIS ESTILOS External CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- GOOGLE Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--ANIMACIONES EXTERNAS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--KEYWORDS-->
+    <meta name="keywords"
+        content="Beneficios diseño web, Diseño de experiencia de usuario">
+    <!--META DESCRIPTION-->
+    <meta name="description"
+        content="En Fancy te ayudamos a crear beneficios como experiencias geniales, diseños únicos y estrategias efectivas.">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="contenedorGeneral">
+            <nav>
+                <!-- logo -->
+                <a href="../index.html">
+                    <img src="../multimedia/logo.svg" alt="logo Fancy" class="logo">
+                </a>
+
+                <!-- Icons -->
+                <input type="checkbox" class="check" id="toggle">
+                <label for="toggle" class="hamburger" id="hamburger">
+                    <img src="../multimedia/menuHamburguesa.png" alt="menu">
+                </label>
+                <!--Opciones de menu-->
+                <ul class="navLista" id="navLista">
+                    <li>
+                        <a href="beneficiosFancy.html">Beneficios</a>
+                    </li>
+                    <li>
+                        <a href="nosotrosFancy.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="serviciosFancy.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="proyectosFancy.html">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="sumateAlEquipoFancy.html">Sumate al equipo</a>
+                    </li>
+                </ul>
+                <a href="contactoFancy.html" class="boton">Empecemos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--BENEFICIOS TOP-->
+    <section class="seccionBeneficiosTop">
+        <div class="contenedorGeneral contenedorBeneficiosTop" data-aos="fade-up-right" data-aos-duration="700">
+            <div class="datosPaginaBeneficios">
+                <h2 class=" tituloSecundario    margenChico">Asumiendo una
+                    perspectiva digital diferente</h2>
+                <h2 class="margenChico">Nunca nos conformamos con nada menos que lo mejor.</h2>
+                <p class="margenGrande">Ayudamos a las empresas a lograr una perspectiva digital tecnológicamente
+                    avanzada y lo hacemos de la manera más confiable. Hacemos que sus transformaciones digitales sean
+                    menos abrumadoras y los desafíos tecnológicos menos intimidantes. La cultura de gestión de proyectos
+                    impulsada por objetivos y el desarrollo de soluciones centradas en el cliente siempre nos han
+                    ayudado a ofrecer los resultados perfectos.
+                </p>
+            </div>
+            <img src="../multimedia/imagenPaginaBeneficios.svg" alt="beneficios">
+        </div>
+    </section>
+    <!--BENEFICIOS MIDDLE-->
+    <section class="seccionBeneficiosMiddle">
+        <div class="contenedorGeneral contenedorBeneficiosMiddle" data-aos="fade-up-left" data-aos-duration="700">
+            <h2 class="tituloSecundario margenGrande">Obtené los siguientes beneficios</h2>
+            <div class="galeriaBeneficiosMiddle">
+                <div class="itemBeneficiosMiddle">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABSlJREFUaEPtWUtvG1UU/s5NkFjQNkjAFmdSCXae+QfpolvijFmCSGDFS3UECIFATQUCIRB1hOgOSGGLxy7bLgi/YOwdSPXE3VYgknaDRHwPuvHYmcedt1MUqXeZzD33fOd9PhPO+KEzrj8eAfi/PTg3DzRqrimEWAPYJKDGgBkER0CfgRGB9sZS/tYbWf15gK8EoFFza0KIKwA3ANQKKjQCqCel3OmNrFHBu7PPSwFo1NwlIcRVgFtlHw7fo7aU8lpvZB0UlVcYQHPFbTDTDwCWij6W8f0BEW92hlaviNxCAGxjcD3N6sR0i4XsCcLo6AgH0zhX+bG4iCXJqJEUDSZeS1aS2o5X38oLIheAScgcW13FevQcgrglx+jlDYFjeQtogKkN4IJG5q6UvJVHXi4AttHv6pXna1KinechnUUnhkELoKs6EI5nbmZ5IhPAuuG2CXQlIuhQSl6dVymclGDai3qDwTtdz0otFKkA/IRV1g+ega984YqRZs1JSSaVwPVQ/yBeT0vsRAB+3O9Hqo2yfK1syGSFgw9CNbhgXhxIyctJbyYCWF92d4noleCjUrI1r7BJAuOHkxv8f1ooaQH4llDWDxy+5njWdpYV5/F/23C3o4nteyHWsbUANIl7qqETBe2Hr1I2EEp6A2oB2EZfWf9ktiHedIbW7jysm1eGveJuYNLxp2fkeOZy9H4MgC4GpeQndUlkG4NvAbzsC/3J8epv5lHQNgY3AFb3GISbztB8O8ELf2flYAxANP7UeNDZr8c68ER5fiP8MN3IAuEr/3o4SWmn69Vj9b65POiFxw7ecjxLde/ZiQGIXUoIH9sY3Af4XATAA8ern0/zgm30HwB4Ilwf+C9n33oqes82XNWlr0//rjNmHIDRd4PLiBB86ec7luqSoVMBwH0AIeAM/rPrWU9H33jxorsqJf06AwD0O55ppXrANtTidHKSan/pEFrpfwPGW+EQwtddz3xHkwdqxAj1BMdTC19KCEUBRC8EL5dN4nVj0CaWLzGBAfpRp/z0nSx9NEkc9kAagDwVp+o3lQE8jPEhCaSupOcJITVMzSbCpCSuatk896NJDGDgeGaU7QiLyltG8yhQ9ZtSZbRAI7sD8EpVJSf3aeh49YtRWaUaWd5Rwl7ufwTCJ3MBQPjYGZqfBmX5A13xUUIJsY2+mgSfnQnUdOMXnvv93OK//6imVPkcPfb4+V/+eF516NnRDHN3Hc+MkWd5x2ntVtQ0+q8y8F0VBAS81vHM7zXWj2yDBcbpIgtNc8X9kpneLQOCiL/qDK33oncrLzRKYJGV0jbczwD6oBgI/tzxrA+jd+ayUiqh+q0IiQu2H7NfAHgmA8g9EL+vW5B8z6vZJ0hbpm6DhWkVRZOPJa8nMcpNY9Bk8GUwLoN8MIx7INwm0O2OV+/oACrlFwR1Y7R8WVpl+kgCsaU8cWleDIUfNmpsDhHGlYmtGQgNxeI3oG2f3y9Fcvk0vfp9IcZ2MPPN7r61kZVXmdTiNB+I0I7yRL7wAyJqjcfyVl7CSym+sCDWmFmthzGaXinPjFYeebkAZIRT0Eg9IurJ8XjEoMMgvU7gC0IsmAxeTWC5j+XkCZvgg4UAqIs+X6ooFh0tnuXxtP8fEvHGqf7AMX1dhQAJbGtY61IAlNVZYjtPyEQfKOyBSMuvkUCLQIp2OZmd8sG4C/CulNh96D/yJdRxUwisEotVJlZDV4gmV8sIMY2Y5J6U2JtXCa7kgXyGPt2vHgE4XftmSz/zHvgPImHNTyXaB+wAAAAASUVORK5CYII=" />
+                    <h3 class="tituloTerciario margenChico">
+                        Experiencias geniales
+                    </h3>
+                    <p> Diseñadas a medida, sustentada en datos y en experimentación.</p>
+                </div>
+
+                <div class="itemBeneficiosMiddle">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAvhJREFUaEPtWM152kAQnVkXkHQQIXIHVWBSQYTIPaQC2xUYVxBcQfA9CFJBcAUS9yArHSQFeCff6kNE6H8kRQR/0hF2Z+bNe7M7swhn/uGZxw8dgFMzyGZg0ndMILwlgGHDwfuIdLPcGWuOXTYAS3efAEDjOCm7FgHcpTc0yq5X66oAII4D7lrbG7JiYi1WwVi6+38D4Gqcm7E4I4yEpNZIggGuxlsEoPSeqJE0ACyJtAlAsRf39/IBxBHHNds0A1x/hQxwDXKPzaKEFP3fAegkFLsYuZJ9kRLyAeBNWIxSUm/tG+q34CsqqiaL2NScoRDoRGxubW941AUnGehvN0B0GW4Sgt59/WFsTgHgw1tnJCV+PwBAfLR3g1E0SQkAY92ZI+DV30V0Z3vG7BQALN2ZAeBt6JuA7leecZ0LwNKdawD8HC6K9x9tSmiiu87R4IT0yd4Zi1wApuZoQqAaWg5ftA7aAlAURyTBybKzdNcFgMGBOqKH1ZMxbbOIxz1ngYgf8wpY/Zc60Fh9ZwqEX46g7elrg4E8//F0Z05kcRb2G9XAbcbkZax9QzHG/lKOSWUj4QNSTp9cCak/98bV8fkqPzK6sT1jzo4+uFOOD4wMG7+lpFFWknJnYjVeEuGqIDjf9oa9agCKXzgQaZz31FI41O+ZULQebudksHwWSmR/KyVNi+RZCCAMNhj2pZgSkrrKE2CkpNK1kKF95eonErog5KLsA1dpANGsm5rzWghU/dFRfSDg9dIb3OfJaaJvrwgoXjNK59raN35xpVgJgHKSUx8+As6fpXwM6VcZvxDikoBUG5B41SvSeR6oygCCSy3tvmCnMNkecEzUAlAbREpvwwk+8ybmGlF9CyLMYld/phkieiCCWXTO4PosvMiqGAwasAsYoRQmIb2P2kDCbyTkWj7DponA/wmAaMBN90xZCa1dA1mGOwAlNdwxECaK8c4fbKn7INZ4EXcASmo+vqyxGjh7BiomsPa2xhioHUlFAx2AiolrbNsfH4nuQKUGoIQAAAAASUVORK5CYII=" />
+                    <h3 class="tituloTerciario margenChico">
+                        Estrategias efectivas
+                    </h3>
+                    <p>Conectamos las necesidades del negocio con los deseos de las personas.</p>
+                </div>
+
+                <div class="itemBeneficiosMiddle">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABMNJREFUaEPtWc1y2zYQ3oV6bas8QWU6d5F9gThPEInutRPn2h7iPkGUJ6hzaK9VpteGUp4g9guU1D2m6Seo3J6F7axIqhAIEKBCt81MMOPx2Pj7Puwu9sMS4SNv+JHjh08E/msL9m6BySgdDoR4SkAnAMA/QyZJBJeIUCBgtpHyallEWR/keyVQgsd3BBB6gGMyFxspXy+LaO0x3jikNwIdwatg1gB4IaV8dQiR3ghMg/QCAZ8fepIAsBaCpr+9jy67rNEbgTjIbgBgVG9ORK+J4Lw+1W8epidSQogkTgjpiR0kzpJ8/NKXRC8EJqM0FAJTZdPbJA93ZHQw7G5iABMgnAHAVwaw8yQPn/mQ6IvAUAj8Q9mwSPLwyAVgS0TAOQC+OJRELwR48zjICvU0haDHvv5cWXDZtAa9TPKIrWRtvRGYHqVzRHyqxsDiJjpzWaHuL62BHMBjdQ4iTd9cR0zufq/R0+N0QoQLZZd1kocPfAnwuIoEJzg1LtZS0pHtiu3NApUbkQpYSnrQ9W43XAicx62u1CuB0yBL1SzcJQ5U4nGQzrTAZitEyyLiONtrvRGYjNKREMi5YNeSPGxdPw5WPwHAt9WEX5N8/L3dlcxW8CLA4FiUtQmwOMh+AQA1aFdJHlo1UQmevtPO8+eaRHycngEhr1k349VsJVAGlHgBQAxqqyirNpeSWLfs1KQBPADSs+Q6mtuCOA5WfwLQ5xqBv5J8/IViBXaZL+sxlRvtqVgjgSqQ+EaxZlMEyCTBGnErmfXWevplwLcT4DH61QxAPyR5dKFu1iDwAaqyXvdOSgpNAadu7HKhkmTKWfrHeh4Svn1zM560EtAnVYNvq98m3aKut5KSJi7w9QRbENf9pQDEd7sNEK+S6/GexRsWiI9Xl0D0qJ5EQK8WeXTOf/OCmw2cISKfws43AfEKQM7bfN4WC23/b+QELwJB5pWM2NV4866JqiuRWMOjX81NCzgmdAXQNt7lQmUc7B/o/4aATxBX2kiV6eAmoMXAoXLAZSmfa7QRxACN67nhQj53rwucT78PAV0T8TNVl+iGGHDfvT4AXWN8XMhwmA1Vakpk+vsWDpHFLgJVNjaKOe4z+b/JnY1SQn8eeugaKxAXUBtRg6Q2FgosBBp6vKiEVKOC5nIFV7+dwH6ZxvaosYk5fp/uKUHbAq5gdPWbCBhO3+rGVjltWYRfRXty1gXQ1a8TMFydYLp9dgLPZsIqiDQrQMOVXC7i6lf3r/bkApkq428rdWssALe+yEynwe+AjaTHqgZySQJXf3XrjAYCF3pl25VInU9KS9GWLTHtq8ZfqU6WzerLr7Ua4XQh1bTNhLKbPju0LF6vcBqsnhMQV9/2wLf5vYrNaYF6sJ0EFIg422zk2y7SevowfSIkzkwfQ3zBMzZvAmVCauQH9TA4yJb8CUnKTbYovr7as+Lo90fwGQ5Rbh9D/KO5Szm6C/jOBHhCVULkasM/LzIf3eAecwdI511fdZ0sUGNwlMXdULUR+seQLgscREAhMhKCi1nItSPXg1/HdUdEy8EA5r5leBOxDyKgJaFQCDjZfkISMFQLA9tx24c/+7jMBMJlW8n8X7NAl43ua2xvFrgvgK51PxFwndB99/8NdhHJT9m8JYwAAAAASUVORK5CYII=" />
+                    <h3 class="tituloTerciario margenChico">
+                        Diseños únicos
+                    </h3>
+                    <p>Productos personalizados a tus necesidades con diseños de impacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="contenedorGeneral">
+            <div class="footer">
+
+                <div class="footerEscribinos">
+                    <div class="margenGrande">
+                        <a href="contactoFancy.html" class="boton">Escribinos</a>
+                    </div>
+                    <div class="footerTexto">
+                        <p>© Fancy - Todos los derechos reservados.</p>
+                    </div>
+                </div>
+
+                <div class="footerLinks">
+                    <ul>
+                        <li>info@fancy.com.ar</li>
+                        <li>08000303456</li>
+                        <li>Avenida libertador 333</li>
+                    </ul>
+                </div>
+
+                <div class="footerLinks">
+                    <ul>
+                        <li><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a href="#">Política de calidad</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerIconos">
+
+                    <a href="#">
+                        <img src="../multimedia/icon-facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../multimedia/icon-youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="../multimedia/icon-twitter.svg" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="../multimedia/icon-instagram.svg" alt="instagram">
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--SCRIPTS-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+</html>

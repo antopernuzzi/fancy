@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- da al navegador las instrucciones sobre cómo controlar las dimensiones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy - Agencia digital</title>
+    <!--Icono-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./multimedia/iconoLogo.svg">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- MIS ESTILOS External CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- GOOGLE Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--ANIMACIONES EXTERNAS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--KEYWORDS-->
+    <meta name="keywords" content="Desarrollo web, Agencia digital, outsourcing , Diseño web, Desarrollo ágil de software">
+    <!--META DESCRIPTION-->
+    <meta name="description" content="Somos una Agencia digital que ofrece servicios de desarrollo ágil de software, diseño web, outsourcing, entre otras soluciones tecnológicas.">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="contenedorGeneral">
+            <nav>
+                <!-- logo -->
+                <a href="index.html">
+                    <img src="./multimedia/logo.svg" alt="logo Fancy" class="logo">
+                </a>
+
+                <!-- Icons -->
+                <input type="checkbox" class="check" id="toggle">
+                <label for="toggle" class="hamburger" id="hamburger">
+                    <img src="./multimedia/menuHamburguesa.png" alt="menu">
+                </label>
+                <!--Opciones de menu-->
+                <ul class="navLista" id="navLista">
+                    <li>
+                        <a href="pages/beneficiosFancy.html">Beneficios</a>
+                    </li>
+                    <li>
+                        <a href="pages/nosotrosFancy.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="pages/serviciosFancy.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="pages/proyectosFancy.html">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="pages/sumateAlEquipoFancy.html">Sumate al equipo</a>
+                    </li>
+                </ul>
+                <a href="./pages/contactoFancy.html" class="boton">Empecemos</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BIENVENIDA -->
+    <section class="seccionBienvenida">
+        <div class="contenedorGeneral bienvenida moveUP">
+            <div class="bienvenidaTextos wow bounceInUp">
+                <h1 class="animate__animated animate__bounce margenChico">
+                    Somos una <span>Agencia Digital</span> de soluciones IT
+                </h1>
+                <p class="margenGrande">
+                    Transformamos las experiencias digitales de las organizaciones, sus clientes y su gente, a través de
+                    soluciones tecnológicas.
+                </p>
+                <a href="./pages/serviciosFancy.html" class="boton">Nuestros servicios</a>
+            </div>
+            <div class="imagenBienvenida">
+                <img src="./multimedia/imagenPortada.svg" alt="imagen bienvenida">
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="seccionBeneficios" id="seccionBeneficios">
+        <div class="contenedorGeneral beneficios " data-aos="fade-up-right" data-aos-duration="700">
+            <div class="seccionTextos">
+                <h2 class="margenChico tituloSecundario">
+                    Por qué elegir Fancy?
+                </h2>
+                <p class="margenGrande">
+                    Somos tu principal aliado al momento de implementar nuevos proyectos. Trabajando juntos podés
+                    obtener muchos beneficios.
+                </p>
+            </div>
+
+            <div class="galeriaBeneficios">
+                <div class="itemBeneficio ">
+
+                    <h3 class="tituloTerciario margenChico animate__animated animate__flash">
+                        Experiencias geniales
+                    </h3>
+                    <p> Diseñadas a medida, sustentada en datos y en experimentación.</p>
+                </div>
+
+                <div class="itemBeneficio">
+
+                    <h3 class="tituloTerciario margenChico animate__animated animate__flash">
+                        Estrategias efectivas
+                    </h3>
+                    <p>Conectamos las necesidades del negocio con los deseos de las personas.</p>
+                </div>
+
+                <div class="itemBeneficio">
+
+                    <h3 class="tituloTerciario margenChico animate__animated animate__flash">
+                        Diseños únicos
+                    </h3>
+                    <p>Productos personalizados a tus necesidades con diseños de impacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--NOSOTROS-->
+    <section class="contenedorNosotros">
+        <div class="contenedorGeneral  nosotros " data-aos="flip-left">
+            <div class="imagenNosotros">
+                <img src="./multimedia/imagenNosotros.svg" alt="imagen nosotros">
+            </div>
+            <div class="textosNosotros">
+                <h2 class="tituloSecundario margenChico">Contamos con + de 10 años de experiencia</h2>
+                <p>Creamos soluciones digitales innovadoras y
+                    a medida, para imponernos en un entorno cada
+                    vez más cambiante y vertiginoso.</p>
+                <p class="margenChico ">Porque si se puede pensar, podemos crearlo.</p>
+                <a href="./pages/nosotrosFancy.html" class="boton margenGrande">Conocé más</a>
+            </div>
+        </div>
+    </section>
+
+    <!--PROYECTOS CONTADOR-->
+    <section class="contadorSeccion">
+        <div class="contenedorGeneral">
+            <div class="contador " data-aos="zoom-in">
+
+                <div class='tipoContenedor'>
+                    <h2>80+</h2>
+                    <p>Proyectos finalizados</p>
+                </div>
+                <div class='tipoContenedor'>
+                    <h2>30+</h2>
+                    <p>Clientes felices</p>
+                </div>
+                <div class='tipoContenedor'>
+                    <h2>23+</h2>
+                    <p>Proyectos en curso</p>
+                </div>
+                <div class='tipoContenedor'>
+                    <h2>2.5M</h2>
+                    <p>Audiencia prevista</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="proyectosSeccion">
+        <div class="contenedorGeneral">
+
+            <div class="seccionTextos">
+                <h2 class="margenChico tituloSecundario">
+                    Nuestros proyectos
+                </h2>
+                <p class="margenGrande">
+                    Conocé algunos de los últimos proyectos en los que estuvimos interviniendo.
+                </p>
+            </div>
+
+            <div class="galeriaProyectos">
+
+                <div class="itemProyecto">
+                    <img src="./multimedia/projectBasics.svg" alt="proyecto basics" class="margenChico">
+                    <div class="datosProyecto">
+                        <p class="autorProyecto margenChico">
+                            Por Carlos Lopez
+                        </p>
+                        <h4 class="tituloProyectomargenChico">
+                            Lorem ipsum dolor
+                        </h4>
+                        <p class="descripcionItemProyecto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nihil!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itemProyecto">
+                    <img src="./multimedia/projectLlamas.svg" alt="proyecto llamas" class="margenChico">
+                    <div class="datosProyecto">
+                        <p class="autorProyecto margenChico">
+                            Por Pilar Villaruel
+                        </p>
+                        <h4 class="tituloProyectomargenChico">
+                            Lorem ipsum dolor
+                        </h4>
+                        <p class="descripcionItemProyecto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eum!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itemProyecto">
+                    <img src="./multimedia/projectAventura.svg" alt="proyecto aventura" class="margenChico">
+                    <div class="datosProyecto">
+                        <p class="autorProyecto margenChico">
+                            Por Carla Ambrosio
+                        </p>
+                        <h4 class="tituloProyectomargenChico">
+                            Lorem ipsum dolor
+                        </h4>
+                        <p class="descripcionItemProyecto">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, consectetur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itemProyecto">
+                    <img src="./multimedia/projectCuerdas.svg" alt="proyecto cuerdas" class="margenChico">
+                    <div class="datosProyecto">
+                        <p class="autorProyecto margenChico">
+                            By Fernando Re
+                        </p>
+                        <h4 class="tituloProyectomargenChico">
+                            Lorem ipsum dolor
+                        </h4>
+                        <p class="descripcionItemProyecto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perspiciatis.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="contenedorGeneral">
+            <div class="footer">
+
+                <div class="footerEscribinos">
+                    <div class="margenGrande">
+                        <a href="./pages/contactoFancy.html" class="boton">Escribinos</a>
+                    </div>
+                    <div class="footerTexto">
+                        <p>© Fancy - Todos los derechos reservados.</p>
+                    </div>
+                </div>
+
+                <div class="footerLinks">
+                    <ul>
+                        <li>info@fancy.com.ar</li>
+                        <li>08000303456</li>
+                        <li>Avenida libertador 333</li>
+                    </ul>
+                </div>
+
+                <div class="footerLinks">
+                    <ul>
+                        <li><a href="./pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a href="./pages/notFound.html">Política de calidad</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerIconos">
+
+                    <a href="#">
+                        <img src="./multimedia/icon-facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./multimedia/icon-youtube.svg" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="./multimedia/icon-twitter.svg" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./multimedia/icon-instagram.svg" alt="instagram">
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPTS-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

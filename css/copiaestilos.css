@@ -1,0 +1,977 @@
+/* -------------- font google --------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+/* ESTILOS GLOBALES */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    
+
+html {
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    width: 100%;
+    
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--grisTexto);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.contenedorGeneral {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+.textoDecorativo{
+   color: var(--lila);
+    font-size: 1rem;
+}
+
+/* VARIABLES */
+:root {
+
+    --grisTexto: hsl(233, 8%, 62%);
+    --grisCelestito: hsl(220, 16%, 96%);
+    --grisSuperClarito: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --gris: #6d7784;
+    --lila: #5222D0;
+    --lilaOscuro: #411EB2;
+    --naranja: #EB615A;
+    --amarillo: #FFD36F;
+    --grisClaro: #EBEBEB;
+}
+
+/* CLASES ÚTILES*/
+.margenChico {
+    margin-bottom: 1.6rem;
+}
+
+.margenMedio {
+    margin-bottom: 3rem;
+}
+
+.margenGrande {
+    margin-bottom: 5rem;
+}
+
+/********** HEADER STYLES ***********/
+/********** HEADER STYLES ***********/
+
+
+
+header {
+    width: 100%;
+    height: 8.5rem;
+    padding: 2.5rem 0;
+    background-color:var(--white);
+    position: relative;
+    z-index: 9999999;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.check {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navLista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLista li {
+    list-style: none;
+    margin: 0 1.5rem;
+}
+
+li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--grisTexto);
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+li a:hover {
+    color: var(--lila);
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .3rem;
+    background: linear-gradient(to right, var(--lila), var(--naranja));
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .3s;
+}
+
+nav ul li a:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.boton {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    background: var(--lila);
+    border-radius: 5rem;
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all .2s;
+}
+
+.boton:hover {
+    opacity: .8;
+    transform: scaleX(1.1);
+    color: var(--white);
+}
+
+/********** BIENVENIDA SECTION **********/
+/********** BIENVENIDA SECTION **********/
+
+
+.seccionBienvenida {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.bienvenida {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagenBienvenida {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.imagenBienvenida img {
+    width: 100%;
+
+}
+
+
+.bienvenidaTextos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.bienvenidaTextos h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 4.5rem;
+}
+
+.bienvenidaTextos h1 span {
+    display: inline-block;
+    color: var(--lila);
+    font-weight: bold;
+
+}
+
+/********** BENEFICIOS SECTION   **********/
+/********** BENEFICIOS SECTION   **********/
+
+
+.seccionBeneficios {
+    background-color: var(--grisCelestito);
+}
+
+.seccionTextos {
+    width: 100%;
+    text-align: center;
+}
+
+.tituloSecundario {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 4.5rem;
+}
+
+.galeriaBeneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 1rem;
+}
+
+.itemBeneficio {
+    display: inline-block;
+    text-align: center;
+}
+
+.tituloTerciario {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 4.5rem;
+}
+
+/********** NOSOTROS SECTION   **********/
+/********** NOSOTROS SECTION   **********/
+
+
+.contenedorNosotros {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagenNosotros {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.imagenNosotros img {
+    width: 100%;
+
+}
+
+.textosNosotros {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: flex-start;
+}
+
+
+
+/************* PROYECTOS SECTION  *************/
+/************* PROYECTOS SECTION  *************/
+
+
+.proyectosSeccion {
+    background-color: var(--grisSuperClarito);
+}
+
+.galeriaProyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2rem;
+}
+
+.itemProyecto {
+    background-color: white;
+    background-origin: 1px solid transparent;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.itemProyecto img {
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+
+.datosProyecto {
+    padding: 2rem;
+}
+
+.autorProyecto {
+    font-size: 1.2rem;
+}
+
+.tituloProyecto {
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.descripcionItemProyecto {
+    font-size: 1.3rem;
+}
+
+/************* FOOTER  *************/
+/************* FOOTER  *************/
+footer {
+    padding: 5rem 0;
+    background-color: var(--lilaOscuro);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2rem;
+}
+
+.footerIconos a {
+    padding-right: 1rem;
+}
+
+.footerLinks ul li {
+    list-style: none;
+    padding-bottom: 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.footerLinks ul li a {
+    color: var(--white);
+}
+
+.footerLinks ul li a:hover {
+    color: var(--naranja);
+}
+
+footer .boton {
+
+    color: var(--lila);
+    background-color: var(--white);
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all .2s;
+}
+
+footer .boton:hover {
+    
+    transform: scaleX(1.1);
+    background-color: var(--white);
+    color: var(--lilaOscuro);
+
+}
+
+.footerTexto p {
+    color: var(--white);
+    
+}
+
+/************* PAGINA BENEFICIOS  *************/
+/************* PAGINA BENEFICIOS  *************/
+.seccionBeneficiosTop {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.contenedorBeneficiosTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+.datosPaginaBeneficios {
+    text-align: initial;
+}
+
+.contenedorBeneficiosTop img {
+    width: 100%;
+    justify-self: center;
+}
+
+
+.seccionBeneficiosMiddle {
+    width: 100%;
+    background-color: var(--grisCelestito);
+}
+
+.contenedorBeneficiosMiddle h2 {
+    text-align: center;
+}
+
+.galeriaBeneficiosMiddle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    align-items: center;
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
+
+}
+
+.itemBeneficiosMiddle {
+
+    background-color: var(--grisSuperClarito);
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgb(3 74 40 / 15%);
+    padding: 1.5rem;
+}
+
+/************* PAGINA NOSOTROS  *************/
+/************* PAGINA NOSOTROS *************/
+.nosotrosTop {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.nosotrosTopContenedor {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textosPaginaNosotros {
+    text-align: center;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.textosPaginaNosotros h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 4.5rem;
+}
+
+.corazonNosotros {
+
+    width: 4%;
+
+}
+
+.corazonNosotros>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team {
+    background-color: var(--grisCelestito);
+}
+
+.teamTextos h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+
+.galeriaTeam {
+    display: grid;
+    /* El resultado son tantas columnas de igual ancho y tamaño flexible como caben dentro del contenedor . */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    row-gap: 5rem;
+    column-gap: 5rem;
+
+    justify-content: space-evenly;
+
+}
+
+.itemTeam {
+    background-color: white;
+    background-origin: 1px solid transparent;
+    border-radius: .5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.itemTeam img {
+    width: 100%;
+    height: 23rem;
+    object-fit: cover;
+}
+
+
+/************* PAGINA SERVICIOS *************/
+/************* PAGINA SERVICIOS *************/
+
+.seccionServiciosTop {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.contenedorServiciosTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+.datosPaginaServicios {
+    text-align: initial;
+}
+
+.contenedorServiciosTop img {
+    width: 100%;
+    justify-self: center;
+}
+
+
+.seccionServicioMiddle {
+    width: 100%;
+    background-color: var(--grisCelestito);
+}
+
+
+.galeriaServiciosMiddle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    padding-top: 5rem;
+
+
+}
+
+.itemServiciosMiddle {
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5rem 2rem;
+    text-align: center;
+    transition: all 0.3s;
+
+}
+
+.itemServiciosMiddle:hover {
+    transform: translateY(-2rem);
+    border-top: 2px solid var(--lila);
+}
+
+/************* PAGINA PROYECTOS *************/
+/************* PAGINA PROYECTOS *************/
+
+.seccionProyectosTop {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.contenedorProyectosTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+.datosPaginaProyectos {
+    text-align: initial;
+}
+
+.contenedorProyectosTop img {
+    width: 100%;
+    justify-self: center;
+}
+
+/* CONTADOR PROYECTOS MIDDLE */
+.contadorSeccion {
+    background-color: var(--grisClaro);
+    width: 100%;
+
+}
+
+.contador {
+    background-color: var(--naranja);
+    margin: 5rem;
+    padding: 5rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tipoContenedor {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+.tipoContenedor h2{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.tipoContenedor p {
+    color: white;
+}
+
+/************* PAGINA SUMATE AL EQUIPO *************/
+/************* PAGINA SUMATE AL EQUIPO *************/
+
+.seccionSumateAlEquipoTop {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.contenedorSumateAlEquipoTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+.datosPaginaSumateAlEquipo {
+    text-align: initial;
+}
+
+.contenedorSumateAlEquipoTop img {
+    width: 100%;
+    justify-self: center;
+}
+
+
+.seccionSumateAlEquipoMiddle {
+    width: 100%;
+    background-color: var(--grisCelestito);
+}
+
+
+.galeriaSumateAlEquipoMiddle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    padding-top: 5rem;
+
+
+}
+
+.itemSumateAlEquipoMiddle {
+
+    padding: 5rem 2rem;
+    text-align: center;
+    transition: all 0.3s;
+    
+
+}
+
+
+.itemSumateAlEquipoMiddle:hover {
+    border: 1px solid var(--naranja);
+    border-radius: 50%;
+    transform: translateY(-2rem);
+    background-color:var(--grisSuperClarito);
+    border-bottom: 7px solid var(--naranja);
+    color: var(--naranja);
+    
+}
+
+.seccionSubiCV{
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+    text-align: center;
+}
+
+.subiCVTextos p{
+font-style: italic;
+}
+
+
+
+/************* PAGINA CONTACTO *************/
+/************* PAGINA CONTACTO  *************/
+.oculto{
+    visibility: hidden;
+}
+
+/************* PAGINA PREGUNTAS FRECUENTES *************/
+/************* PAGINA PREGUNTAS FRECUENTES  *************/
+
+.seccionPreguntas{
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.seccionPreguntas .accordion-item {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(142, 142, 142, .16);
+    font-size: 1.3rem;
+    color: var(--grisTexto);
+}
+
+.seccionPreguntas .accordion-item button {
+    position: relative;
+    padding: 18px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    background-color: #fff;
+    color: var(--lila);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+.fit-image{
+    width: 100%;
+    }
+
+/************* PAGINA ERROR 404 *************/
+/************* PAGINA ERROR 404  *************/
+
+
+.seccionRecursoNotFound {
+    width: 100%;
+    background-color: var(--grisSuperClarito);
+}
+
+.recursoNotFound {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.recursoNotFoundImagen{
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.recursoNotFoundImagen img {
+    width: 100%;
+
+}
+
+
+.recursoNotFoundTextos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.recursoNotFoundTextos h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 4.5rem;
+}
+
+
+
+/***********  MEDIA QUERRY  *****************/
+/***********  MEDIA QUERRY  *****************/
+/***********  MEDIA QUERRY  *****************/
+
+/* MOBILE RESPONSIVE  OPCIONES MENU */
+@media screen and (max-width: 832px) {
+    nav .boton {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+
+    .hamburger img {
+        width: 3rem;
+    }
+
+    .navLista {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem 0;
+        margin-top: 4rem;
+        background-color: white;
+        border: 1px solid var(--lila);
+        border-radius: .3rem;
+        transform: translateY(-200%);
+        transition: all .5s;
+        z-index: 999;
+    }
+
+    .navLista li {
+        padding: 1rem 0;
+        font: 1.6rem;
+    }
+
+    li a {
+        color: var(--grisTexto);
+        font-weight: 400;
+    }
+
+    li a:hover {
+        color: var(--lila);
+
+    }
+
+    nav ul li a:hover::before {
+        opacity: 0;
+    }
+
+    /* SLIDE MENU HAMBURGUESA CUANDO LO CLICKEO */
+
+    #toggle:checked~.navLista {
+        transform: translateY(1%);
+    }
+
+    #toggle:checked~.hamburger {
+        border: 1px solid var(--lila);
+        border-radius: .3rem;
+        padding: .4rem;
+    }
+}
+
+/* MEDIA QUERY */
+/* MEDIA QUERY */
+/* para MOBILE y TABLET */
+@media screen and (min-width: 200px) and (max-width: 769px) {
+
+    /* MEDIA QUERY BIENVENIDA SECTION */
+    .bienvenida {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagenBienvenida {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .bienvenidaTextos {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* MEDIA QUERY NOSOTROS SECTION */
+    .nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagenNosotros {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .textosNosotros {
+        width: 100%;
+        align-items: center;
+    }
+
+/* MEDIA QUERY CONTADOR SECTION */
+    .contador {
+       
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+      /* MEDIA QUERY ERROR SECTION */
+      .recursoNotFound{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .recursoNotFoundImagen{
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .recursoNotFoundTextos{
+        width: 100%;
+        align-items: center;
+    }
+
+
+}
+
+/* TABLET Y LAPTOP*/
+@media screen and (min-width: 770px) {
+
+    .seccionBienvenida {
+        padding: 3rem 0 1rem 0;
+    }
+
+
+    /* MEDIA QUERY BENEFICIOS SECTION */
+    .seccionTextos {
+        width: 50%;
+        text-align: left;
+    }
+
+    .itemBeneficio {
+        text-align: left;
+    }
+}
+
+/************** ANIMACION *************/
+/************** MOVER HACIA ARRIBA *************/
+
+
+@keyframes moveUP {
+    0% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.moveUP {
+    animation: moveUP .3s 1 linear;
+}
