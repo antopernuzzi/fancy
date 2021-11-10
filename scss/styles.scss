@@ -87,144 +87,129 @@ section {
 /********** HEADER STYLES ***********/
 
 
-
 header {
-    width: 100%;
-    height: 8.5rem;
-    padding: 2.5rem 0;
-    background-color:$white;
-    position: relative;
-    z-index: 9999999;
+	width: 100%;
+	height: 8.5rem;
+	padding: 2.5rem 0;
+	background-color: $white;
+	position: relative;
+	z-index: 9999999;
 }
-
 .logo {
-    height: 4rem;
+	height: 4rem;
 }
-
 .check {
-    display: none;
+	display: none;
 }
-
 .hamburger {
-    display: none;
+	display: none;
 }
-
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	ul {
+		li {
+			a {
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: .3rem;
+					background: linear-gradient(to right, $lila, $naranja);
+					opacity: 0;
+					transform: scaleX(0);
+					transform-origin: left;
+					transition: all .3s;
+				}
+				&:hover {
+					&::before {
+						opacity: 1;
+						transform: scaleX(1);
+					}
+				}
+			}
+		}
+	}
 }
-
 .navLista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li {
+		list-style: none;
+		margin: 0 1.5rem;
+	}
 }
-
-.navLista li {
-    list-style: none;
-    margin: 0 1.5rem;
+li {
+	a {
+		font-size: 1.6rem;
+		text-decoration: none;
+		color: $gris-texto;
+		padding-bottom: 2rem;
+		position: relative;
+		&:hover {
+			color: $lila;
+		}
+	}
 }
-
-li a {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: $gris-texto;
-    padding-bottom: 2rem;
-    position: relative;
-}
-
-li a:hover {
-    color: $lila;
-}
-
-nav ul li a::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: .3rem;
-    background: linear-gradient(to right, $lila, $naranja);
-    opacity: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all .3s;
-}
-
-nav ul li a:hover::before {
-    opacity: 1;
-    transform: scaleX(1);
-}
-
 .boton {
-    font-size: 1.5rem;
-    color: $white;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 1.1rem 2rem;
-    background: $lila;
-    border-radius: 5rem;
-    opacity: 1;
-    transform: scaleX(1);
-    transition: all .2s;
+	font-size: 1.5rem;
+	color: $white;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 1.1rem 2rem;
+	background: $lila;
+	border-radius: 5rem;
+	opacity: 1;
+	transform: scaleX(1);
+	transition: all .2s;
+	&:hover {
+		opacity: .8;
+		transform: scaleX(1.1);
+		color: $white;
+	}
 }
 
-.boton:hover {
-    opacity: .8;
-    transform: scaleX(1.1);
-    color: $white;
-}
 
 /********** BIENVENIDA SECTION **********/
 /********** BIENVENIDA SECTION **********/
-
 
 .seccionBienvenida {
-    width: 100%;
-    background-color: $gris-superclarito;
+	width: 100%;
+	background-color: $gris-superclarito;
 }
-
 .bienvenida {
-    display: flex;
-    justify-content: space-evenly;
-
+	display: flex;
+	justify-content: space-evenly;
 }
-
 .imagenBienvenida {
-    width: 60%;
-    display: inline-block;
-    text-align: center;
+	width: 60%;
+	display: inline-block;
+	text-align: center;
+	img {
+		width: 100%;
+	}
 }
-
-
-.imagenBienvenida img {
-    width: 100%;
-
-}
-
-
 .bienvenidaTextos {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    align-items: flex-start;
-}
-
-.bienvenidaTextos h1 {
-    font-size: 3.5rem;
-    font-weight: normal;
-    line-height: 4.5rem;
-}
-
-.bienvenidaTextos h1 span {
-    display: inline-block;
-    color: $lila;
-    font-weight: bold;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	align-items: flex-start;
+	h1 {
+		font-size: 3.5rem;
+		font-weight: normal;
+		line-height: 4.5rem;
+		span {
+			display: inline-block;
+			color: $lila;
+			font-weight: bold;
+		}
+	}
 }
 
 /********** BENEFICIOS SECTION   **********/
@@ -267,140 +252,120 @@ nav ul li a:hover::before {
 /********** NOSOTROS SECTION   **********/
 /********** NOSOTROS SECTION   **********/
 
-
 .contenedorNosotros {
-    width: 100%;
-    background-color: $gris-superclarito;
+	width: 100%;
+	background-color: $gris-superclarito;
 }
-
 .nosotros {
-    display: flex;
-    justify-content: space-evenly;
-
+	display: flex;
+	justify-content: space-evenly;
 }
-
 .imagenNosotros {
-    width: 60%;
-    display: inline-block;
-    text-align: center;
+	width: 60%;
+	display: inline-block;
+	text-align: center;
+	img {
+		width: 100%;
+	}
 }
-
-
-.imagenNosotros img {
-    width: 100%;
-
-}
-
 .textosNosotros {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	align-items: flex-start;
 }
 
 
-
 /************* PROYECTOS SECTION  *************/
 /************* PROYECTOS SECTION  *************/
-
 
 .proyectosSeccion {
-    background-color: $gris-superclarito;
+	background-color: $gris-superclarito;
 }
-
 .galeriaProyectos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    row-gap: 4rem;
-    column-gap: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	row-gap: 4rem;
+	column-gap: 2rem;
 }
-
 .itemProyecto {
-    background-color: white;
-    background-origin: 1px solid transparent;
-    border-radius: .5rem;
-    overflow: hidden;
+	background-color: white;
+	background-origin: 1px solid transparent;
+	border-radius: .5rem;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 23rem;
+		object-fit: cover;
+	}
 }
-
-.itemProyecto img {
-    width: 100%;
-    height: 23rem;
-    object-fit: cover;
-}
-
 .datosProyecto {
-    padding: 2rem;
+	padding: 2rem;
 }
-
 .autorProyecto {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
-
 .tituloProyecto {
-    font-size: 1.7rem;
-    font-weight: normal;
+	font-size: 1.7rem;
+	font-weight: normal;
+}
+.descripcionItemProyecto {
+	font-size: 1.3rem;
 }
 
-.descripcionItemProyecto {
-    font-size: 1.3rem;
-}
 
 /************* FOOTER  *************/
 /************* FOOTER  *************/
 footer {
-    padding: 5rem 0;
-    background-color: $lila-oscuro;
+	padding: 5rem 0;
+	background-color: $lila-oscuro;
+	.boton {
+		color: $lila;
+		background-color: $white;
+		opacity: 1;
+		transform: scaleX(1);
+		transition: all .2s;
+		&:hover {
+			transform: scaleX(1.1);
+			background-color: $white;
+			color: $lila-oscuro;
+		}
+	}
 }
-
 .footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    row-gap: 4rem;
-    column-gap: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	row-gap: 4rem;
+	column-gap: 2rem;
+}
+.footerIconos {
+	a {
+		padding-right: 1rem;
+	}
+}
+.footerLinks {
+	ul {
+		li {
+			list-style: none;
+			padding-bottom: 1.5rem;
+			color: white;
+			font-size: 2rem;
+			a {
+				color: $white;
+				&:hover {
+					color: $naranja;
+				}
+			}
+		}
+	}
+}
+.footerTexto {
+	p {
+		color: $white;
+	}
 }
 
-.footerIconos a {
-    padding-right: 1rem;
-}
-
-.footerLinks ul li {
-    list-style: none;
-    padding-bottom: 1.5rem;
-    color: white;
-    font-size: 2rem;
-}
-
-.footerLinks ul li a {
-    color: $white;
-}
-
-.footerLinks ul li a:hover {
-    color: $naranja;
-}
-
-footer .boton {
-
-    color: $lila;
-    background-color: $white;
-    opacity: 1;
-    transform: scaleX(1);
-    transition: all .2s;
-}
-
-footer .boton:hover {
-    
-    transform: scaleX(1.1);
-    background-color: $white;
-    color: $lila-oscuro;
-
-}
-
-.footerTexto p {
-    color: $white;
-    
-}
 
 /************* PAGINA BENEFICIOS  *************/
 /************* PAGINA BENEFICIOS  *************/
