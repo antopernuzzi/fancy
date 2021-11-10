@@ -768,75 +768,61 @@ footer {
 /* MEDIA QUERY */
 /* MEDIA QUERY */
 /* para MOBILE y TABLET */
+
 @media screen and (min-width: 200px) and (max-width: 769px) {
-
     /* MEDIA QUERY BIENVENIDA SECTION */
-    .bienvenida {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .imagenBienvenida {
-        display: inline-block;
-        text-align: center;
-
-    }
-
-    .bienvenidaTextos {
-        width: 100%;
-        align-items: center;
-    }
-
+	.bienvenida {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.imagenBienvenida {
+		display: inline-block;
+		text-align: center;
+	}
+	.bienvenidaTextos {
+		width: 100%;
+		align-items: center;
+	}
     /* MEDIA QUERY NOSOTROS SECTION */
-    .nosotros {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .imagenNosotros {
-        display: inline-block;
-        text-align: center;
-
-    }
-
-    .textosNosotros {
-        width: 100%;
-        align-items: center;
-    }
-
-/* MEDIA QUERY CONTADOR SECTION */
-    .contador {
-       
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-    }
-
-      /* MEDIA QUERY ERROR SECTION */
-      .recursoNotFound{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .recursoNotFoundImagen{
-        display: inline-block;
-        text-align: center;
-
-    }
-
-    .recursoNotFoundTextos{
-        width: 100%;
-        align-items: center;
-    }
-
-
+	.nosotros {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.imagenNosotros {
+		display: inline-block;
+		text-align: center;
+	}
+	.textosNosotros {
+		width: 100%;
+		align-items: center;
+	}
+    /* MEDIA QUERY CONTADOR SECTION */
+	.contador {
+		justify-items: center;
+		align-items: center;
+		text-align: center;
+	}
+    /* MEDIA QUERY ERROR SECTION */
+	.recursoNotFound {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.recursoNotFoundImagen {
+		display: inline-block;
+		text-align: center;
+	}
+	.recursoNotFoundTextos {
+		width: 100%;
+		align-items: center;
+	}
 }
+
 
 /* TABLET Y LAPTOP*/
 @media screen and (min-width: 770px) {
