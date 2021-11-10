@@ -665,45 +665,35 @@ footer {
 /************* PAGINA ERROR 404 *************/
 /************* PAGINA ERROR 404  *************/
 
-
 .seccionRecursoNotFound {
-    width: 100%;
-    background-color: $gris-superclarito;
+	width: 100%;
+	background-color: $gris-superclarito;
 }
-
 .recursoNotFound {
-    display: flex;
-    justify-content: space-evenly;
-
+	display: flex;
+	justify-content: space-evenly;
 }
-
-.recursoNotFoundImagen{
-    width: 60%;
-    display: inline-block;
-    text-align: center;
+.recursoNotFoundImagen {
+	width: 60%;
+	display: inline-block;
+	text-align: center;
+	img {
+		width: 100%;
+	}
 }
-
-
-.recursoNotFoundImagen img {
-    width: 100%;
-
-}
-
-
 .recursoNotFoundTextos {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	align-items: flex-start;
+	h1 {
+		font-size: 3.5rem;
+		font-weight: normal;
+		line-height: 4.5rem;
+	}
 }
 
-.recursoNotFoundTextos h1 {
-    font-size: 3.5rem;
-    font-weight: normal;
-    line-height: 4.5rem;
-}
 
 
 

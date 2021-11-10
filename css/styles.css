@@ -556,9 +556,8 @@ footer {
   width: 60%;
   display: inline-block;
   text-align: center; }
-
-.recursoNotFoundImagen img {
-  width: 100%; }
+  .recursoNotFoundImagen img {
+    width: 100%; }
 
 .recursoNotFoundTextos {
   display: flex;
@@ -566,11 +565,10 @@ footer {
   justify-content: center;
   width: 50%;
   align-items: flex-start; }
-
-.recursoNotFoundTextos h1 {
-  font-size: 3.5rem;
-  font-weight: normal;
-  line-height: 4.5rem; }
+  .recursoNotFoundTextos h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 4.5rem; }
 
 /***********  MEDIA QUERRY  *****************/
 /***********  MEDIA QUERRY  *****************/
