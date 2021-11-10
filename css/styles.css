@@ -338,20 +338,18 @@ footer {
   text-align: center;
   padding-right: 20%;
   padding-left: 20%; }
-
-.textosPaginaNosotros h1 {
-  font-size: 3.5rem;
-  font-weight: normal;
-  line-height: 4.5rem; }
+  .textosPaginaNosotros h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 4.5rem; }
 
 .corazonNosotros {
   width: 4%; }
-
-.corazonNosotros > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block; }
+  .corazonNosotros > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
 
 .team {
   background-color: #f3f4f6; }
@@ -363,7 +361,6 @@ footer {
 
 .galeriaTeam {
   display: grid;
-  /* El resultado son tantas columnas de igual ancho y tamaño flexible como caben dentro del contenedor . */
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   row-gap: 5rem;
   column-gap: 5rem;
@@ -375,11 +372,10 @@ footer {
   border-radius: .5rem;
   overflow: hidden;
   text-align: center; }
-
-.itemTeam img {
-  width: 100%;
-  height: 23rem;
-  object-fit: cover; }
+  .itemTeam img {
+    width: 100%;
+    height: 23rem;
+    object-fit: cover; }
 
 /************* PAGINA SERVICIOS *************/
 /************* PAGINA SERVICIOS *************/

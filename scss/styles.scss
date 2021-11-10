@@ -414,80 +414,66 @@ footer {
 /************* PAGINA NOSOTROS  *************/
 /************* PAGINA NOSOTROS *************/
 .nosotrosTop {
-    width: 100%;
-    background-color: $gris-superclarito;
+	width: 100%;
+	background-color: $gris-superclarito;
 }
-
 .nosotrosTopContenedor {
-    display: flex;
-    height: 400px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+	display: flex;
+	height: 400px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
-
 .textosPaginaNosotros {
-    text-align: center;
-    padding-right: 20%;
-    padding-left: 20%;
+	text-align: center;
+	padding-right: 20%;
+	padding-left: 20%;
+	h1 {
+		font-size: 3.5rem;
+		font-weight: normal;
+		line-height: 4.5rem;
+	}
 }
-
-.textosPaginaNosotros h1 {
-    font-size: 3.5rem;
-    font-weight: normal;
-    line-height: 4.5rem;
-}
-
 .corazonNosotros {
-
-    width: 4%;
-
+	width: 4%;
+	>img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
 }
-
-.corazonNosotros>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 .team {
-    background-color: $gris-celestito;
+	background-color: $gris-celestito;
 }
-
-.teamTextos h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: x-large;
-
+.teamTextos {
+	h2 {
+		text-align: center;
+		font-weight: bold;
+		font-size: x-large;
+	}
 }
-
-
 .galeriaTeam {
-    display: grid;
-    /* El resultado son tantas columnas de igual ancho y tamaño flexible como caben dentro del contenedor . */
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    row-gap: 5rem;
-    column-gap: 5rem;
-
-    justify-content: space-evenly;
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	row-gap: 5rem;
+	column-gap: 5rem;
+	justify-content: space-evenly;
 }
-
 .itemTeam {
-    background-color: white;
-    background-origin: 1px solid transparent;
-    border-radius: .5rem;
-    overflow: hidden;
-    text-align: center;
+	background-color: white;
+	background-origin: 1px solid transparent;
+	border-radius: .5rem;
+	overflow: hidden;
+	text-align: center;
+	img {
+		width: 100%;
+		height: 23rem;
+		object-fit: cover;
+	}
 }
 
-.itemTeam img {
-    width: 100%;
-    height: 23rem;
-    object-fit: cover;
-}
 
 
 /************* PAGINA SERVICIOS *************/
