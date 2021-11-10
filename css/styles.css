@@ -388,13 +388,12 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: center;
   gap: 1rem; }
+  .contenedorServiciosTop img {
+    width: 100%;
+    justify-self: center; }
 
 .datosPaginaServicios {
   text-align: initial; }
-
-.contenedorServiciosTop img {
-  width: 100%;
-  justify-self: center; }
 
 .seccionServicioMiddle {
   width: 100%;
@@ -412,10 +411,9 @@ footer {
   padding: 5rem 2rem;
   text-align: center;
   transition: all 0.3s; }
-
-.itemServiciosMiddle:hover {
-  transform: translateY(-2rem);
-  border-top: 2px solid #5222D0; }
+  .itemServiciosMiddle:hover {
+    transform: translateY(-2rem);
+    border-top: 2px solid #5222D0; }
 
 /************* PAGINA PROYECTOS *************/
 /************* PAGINA PROYECTOS *************/
